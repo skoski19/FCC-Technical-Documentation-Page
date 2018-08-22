@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  font-family: Archivo, sans-serif;
+	margin-left: 150px;
+	margin-bottom: 200px;
+}
+
+header{
+	color: black;
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 1;
+}
+
+#main-doc header {
+    text-align: left;
+}
+
+#navbar header{
+	color: black;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1;
+	position: fixed;
+	width: 300px;
+	top: 15px;
+	background-color: #ffffff;
+	height: 65px;	
+}
+
+#navbar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 0;
+		border-right: solid;
+		border-right-color: #848484;
+    background-color: #ffffff;
+		color:#000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+		line-height:1.5;
+}
+
+#main-doc {
+    font-family: "Archivo", serif;
+	  color:#000000;
+		line-height: 1.2;
+		margin-left: 60px;
+		margin-right: 80px;
+		margin-top: 60px;
+}
+
+.main-section p, li {
+  line-height:1.8;
+}
+
+.main-section li {
+  padding-bottom: 0.8em;
+	padding-left: 70px;
+}
+
+.x-hidden-focus {
+    border-radius: 1px;
+    display: inline-block;
+    padding: 1px 3px;
+	  border: 1px solid #d3d6db;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.8;
+		font-size: 1.2;
+    background-color: #f7f7f7;
+    padding: 16px;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+#navbar a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color:#000000;
+    display: block;
+}
+
+#navbar a:hover {
+    color: #FF0080;
+}
+
+#footer {
+		position: fixed;
+		left: 0;
+    bottom: 0;
+		padding-top: 20px;
+    width: 110%;
+    color: #848484;
+		background-color: #ffffff;
+    height: 50px;
+    text-align: center;
+		line-height: 1.4;
+}
+
+@media only screen and (max-width:768px) {
+  #navbar {
+    width:100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    padding-top: 1em;
+    overflow: hidden;
+    background-color: #1D3132;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+  }
+  
+  code {
+    padding: 0.5em;
+    margin: 0.5em 0 0.5em 0.5em;
+  }
+}
